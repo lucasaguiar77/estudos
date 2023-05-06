@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+
+        body{
+            margin: 0px;
+            padding: 0px;
+            background-color: antiquewhite;
+        }
+
+        header{
+            background-color: white;
+            font-family: serif;
+            border-radius: 5px;
+            margin: 10px;
+        }
+
+        nav{
+            background-color: rgba(194, 194, 194, 0.466);
+            box-shadow: 2px 2px 2px rgba(14, 14, 14, 0.096);
+        }
+
+        h1{
+            padding-left: 17px;
+        }
+
+        nav > a{
+            color: black;
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        a:hover{
+            color: blue;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color: aqua;
+        }
+
+        main{
+            background-color: white;
+            margin: 10px;
+            border-radius: 5px;
+        }
+
+        h2{
+            margin: 10px;
+            text-align: center;
+        }
+
+        article > p {
+            text-align: justify;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        aside{
+            background-color: rgb(231, 231, 231);
+            padding-left: 10px;
+            border-bottom: 1px solid black;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+        }
+
+        footer > p{
+            margin: 0;
+        }
+
+        p > a{
+            color: white;
+            text-decoration: none;
+        }
+
+        p > a::after{
+            content: '[Link]';
+            padding-left: 3px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#" target="_blank">Link</a>
+            <a href="#" target="_blank">Link</a>
+            <a href="#" target="_blank">Link</a>
+            <a href="#" target="_blank">Link</a>
+            <a href="#" target="_blank">Link</a>
+        </nav>
+    </header>
+
+    <main>
+        <article>
+            <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, doloribus? Illo distinctio pariatur harum ipsum nisi veritatis mollitia nostrum saepe ipsam consectetur iure, delectus architecto, quo provident beatae? Cum, placeat.</p>
+                <aside>Escrito po Lucas Aguiar</aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>Desenvolvido por <a href="#" class="social">Lucas Aguiar</a></p>
+    </footer>
+</body>
+</html>
